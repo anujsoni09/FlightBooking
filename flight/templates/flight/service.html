@@ -1,0 +1,66 @@
+{% extends 'flight/layout.html' %}
+
+{% load static %}
+
+{% block head %}
+    <title>Service | Flight</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/privacy-policy.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+{% endblock head %}
+
+{% block body %}
+    <section class="privacybanner-section">
+        <img src="{% static 'img\service1.jpg' %}" alt="Privacy Policy" class="privacybannerimg">
+    </section>
+    <section class="section section1">
+        <div class="container">
+            <h1>Explore India<br></h1>
+            <p> These popular destinations have a lot to offer</p>
+            <div class="container-fluid" my-2 px-2>
+            <div class="card-group">
+                <div class="card">
+                  <img src="{% static 'img\chennai1.jpg' %}" class="card-img-top" width="300" height="260" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Chennai</h5>
+                    <p class="card-text">Ancient temples, vibrant arts, natural wonders and a bustling culinary scene make Chennai, the capital of Tamil Nadu,</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">5,249 properties</small>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="{% static 'img\delhi1.jpg' %}" class="card-img-top" width="300" height="260" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Delhi</h5>
+                    <p class="card-text">New Delhi is best known as the location of India's national government. New Delhi has great 
+                        historical significance as it was home to powerful people, such as the Pāṇḍavas</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">7,789 properties</small>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="{% static 'img\goa1.jpg' %}" class="card-img-top" width="300" height="260"  alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Goa</h5>
+                    <p class="card-text">The state of Goa, in India, is famous for its beaches and places of worship. 
+                        Tourism is its primary industry, and is generally focused on the coastal areas of Goa,</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">3,459 properties</small>
+                  </div>
+                </div>
+              </div>
+        </div></div>
+    </section>
+    <div class="container-fluid">
+        <img src="{% static 'img\Homeguest.png' %}" width="1200" height="500" class="center" alt="...">
+    </div>
+    <div><center>
+        <img src="{% static 'img\Homeguest1.png' %}" width="1000" height="200" alt="..."></center>
+    </div>
+    <div><center>
+        <img src="{% static 'img\Homeguest3.png' %}" width="1250" height="300" alt="..."></center>
+    </div>
+    <br>
+{% endblock%}
